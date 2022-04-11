@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Sanchez">
+    <meta name="keywords" content="震撼引擎">
+    <title>震撼引擎</title>
+    <style>
+        .about-title {
+            font-size: 180%;
+            text-align: center;
+            color: #34495e;
+        }
+
+        .p1 {
+            color: #7f8c8d;
+            font: 16px;
+            text-align: center !important;
+        }
+
+        .input-all {
+            width: 600px;
+            height: 40px;
+            text-align: center;
+            border-color: #5eb95e !important;
+        }
+
+        input.submit {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            height: 40px;
+            width: 100px;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function search(x) {
+            var baseurl;
+            var url;
+            if (x == 1) {
+                baseurl = "https://www.baidu.com/s?wd=";
+            } else if (x == 2) {
+                baseurl = "https://www.sogou.com/web?query=";
+            } else if (x == 3) {
+                baseurl = "https://cn.bing.com/search?mkt=zh-cn&pc=LVBT&form=CNTP59&ensearch=0&q=";
+            } else if (x == 4) {
+                baseurl = "";
+            } else if (x == 5) {
+                baseurl = "https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=";
+            } else if (x == 6) {
+                baseurl = "https://search.bilibili.com/all?keyword=";
+            } else if (x == 7) {
+                baseurl = "";
+            } else if (x == 8) {
+                baseurl = "https://www.youdao.com/w/eng/";
+            } else if (x == 9) {
+                baseurl = "https://www.chinaso.com/newssearch/all/allResults?q=";
+            } else if (x == 10) {
+                baseurl = "https://m.sm.cn/s?q=";
+            } else if (x == 11) {
+                baseurl = "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=";
+            } else if (x == 12) {
+                baseurl = "https://www.yandex.com/search/?text="
+            }
+            var get = document.getElementById("input").value;
+            url = baseurl + get;
+            window.open(url, target = "_Self");
+        }
+        function sayerror() {
+            alert("该搜索引擎暂不能用！正在维护中。");
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <h2 class="about-title">一站式搜索服务</h2>
+        <p class="p1">注:鸣谢Sanchez</p>
+    </header>
+    <hr>
+    <div>
+        <div style="text-align: center;">
+            <input id="input" class="input-all" placeholder="搜索一下，你就知道">
+        </div>
+        <div style="text-align: center;">
+            <input type="submit" value="百度" class="submit" title="百度一下，你就知道" onclick="search(1)">
+            <input type="submit" value="搜狗" class="submit" title="搜狗搜索" onclick="search(2)">
+            <input type="submit" value="Bing" class="submit" title="必应" onclick="search(3)">
+            <input type="submit" value="谷歌" class="submit" title="谷歌搜索" onclick="sayerror()">
+            <br>
+            <input type="submit" value="360" class="submit" title="360搜索" onclick="search(5)">
+            <input type="submit" value="B站" class="submit" title="Bilibili搜索" onclick="search(6)">
+            <input type="submit" value="雅虎" class="submit" title="雅虎搜索" onclick="sayerror()">
+            <input type="submit" value="有道" class="submit" title="有道词典搜索" onclick="search(8)">
+            <br>
+            <input type="submit" value="中国搜索" class="submit" title="中国搜索" onclick="search(9)">
+            <input type="submit" value="神马" class="submit" title="神马搜索" onclick="search(10)">
+            <input type="submit" value="NAVER" class="submit" title="NAVER搜索(韩)" onclick="search(11)">
+            <input type="submit" value="Yandex" class="submit" title="Yandex搜索(俄)" onclick="search(12)">
+        </div>
+    </div>
+    <div>
+        <address style="text-align: center; color: red;">
+            Made by:Sanchez.
+        </address>
+    </div>
+</body>
+
+</html>

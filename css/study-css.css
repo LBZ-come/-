@@ -1,0 +1,23 @@
+.codelist{
+    overflow: hidden;
+    background-color: #fff;
+}
+.codelist h2{
+    border-bottom: 1px solid #eaeaea;
+    font-style: inherit;
+}
+.codelist a{
+    width: 20%;
+    margin: 0 8px 10px 0;
+    text-align: left;
+    height: 80px;
+    color: #bbb;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 6px 16px;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 0;
+}

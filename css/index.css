@@ -1,0 +1,113 @@
+body{
+    background-image: url("../picture/尼尔.jfif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+.menu{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 70px;
+    background-color: #333;
+    opacity: 70%;
+}
+ul{
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: ghostwhite;
+    display: block;
+}
+a:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+.menu ul li ul{
+    display: none;
+}
+
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    left: 26.3%;
+    top: 68px;
+}
+.menu ul li ul li{
+    text-align: center;
+    margin-top: 3px;
+    float: none;
+    background-color: #333;
+}
+.menu ul li ul li a:hover{
+    color: lightseagreen;
+}
+.menu ul li:hover ul{
+    display: block;
+} 
+.part1{
+    float: left;
+    padding: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: 7.5%;
+    margin-right: 0;
+    width: 60%;
+    height: 600px;
+    background-color: #333;
+    opacity: 70%;
+}
+.part2{
+    float: left;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right:7.5%;
+    width: 20%;
+    height: 600px;
+    background-color: #333;
+    opacity: 70%;
+}
+.part1 h2 a{
+    font-size: 25px;
+    margin-left: 10px;
+    color: lightseagreen;
+}
+.part1 p{
+    margin-left: 10px;
+    color: ghostwhite;
+}
+#datetime{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    font-size: 20px;
+}
+#news h2{
+    text-align: center;
+    color: lightseagreen;
+    padding: 0%;
+}
+#news ul li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-left: -10px;
+}
